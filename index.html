@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.min.css">
+        <link rel="stylesheet" href="bower_components/bootstrap-toggle/css/bootstrap-toggle.css">
+        <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+             <select id="listPort" onClick="listPorts()" data-style="btn-success" class="selectpicker">
+              <option></option>
+          </select>
+          <button class="btn btn-primary" onClick="connect()">Connect</button>
+          <button class="btn btn-danger" onClick="disconnect()">Disconnect</button>
+        </div>
+      </div>
+       
+          <p><p/>
+
+    <div class="row">
+      <div class="col-xs-6">
+            <div class="panel panel-default">
+      <div class="panel-heading">Sensors</div>
+    <div class="panel-body">
+        <ul class="list-group">
+          <li class="list-group-item">[A0] Temperature<span class="badge" id="a0"> 0</span></li>
+          <li class="list-group-item">[A1] Light<span  class="badge" id="a1"> 0</span></li>
+          <li class="list-group-item">[A2] Audio<span class="badge"  id="a2"> 0</span></li>
+          <li class="list-group-item">[A3] Humidity<span class="badge"  id="a3"> 0</span></li>
+          <li class="list-group-item">[A4] Infrared<span class="badge"  id="a4"> 0</span></li>
+          <li class="list-group-item">[A5] Slider<span class="badge" id="a5"> 0</span></li>
+        <ul>
+
+      </div>
+    </div>
+      </div>
+      <div class="col-xs-6">
+      <div class="panel panel-default">
+      <div class="panel-heading">Actuators</div>
+        <div class="panel-body">
+            <ul class="list-group">
+
+              <li class="list-group-item">[D4] Green Led   
+                <div class="pull-right"> 
+                  <input  id="greenLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+                </div></li>
+
+              <li class="list-group-item">[D5] Yellow Led
+                <div class="pull-right"> 
+                  <input  id="yellowLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+                </div>
+              </li>
+
+              <li class="list-group-item">[D6] Buzzer
+                <div class="pull-right">
+                   <input style="float:right" id="buzzer" data-slider-id='data-buzzer' type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0"/>
+                </div>
+               
+              </li>
+
+               <li class="list-group-item">[D7] Red Led
+                 <div class="pull-right"> 
+                  <input  id="redLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+                </div>
+              </li>
+
+
+              <li class="list-group-item">[D13] White Led 
+                <div class="pull-right"> 
+                  <input  id="whiteLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+                </div>
+                
+              </li>
+            <ul>
+        </div>
+      </div>
+
+    </div>
+
+    
+    </div>
+   
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js"></script>
+    <script src="bower_components/bootstrap-toggle/js/bootstrap-toggle.min.js"></script>
+    <script src="bower_components/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="./js/controller.js"></script>
+  </body>
+</html>
