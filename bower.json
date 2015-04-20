@@ -1,0 +1,23 @@
+{
+  "name": "TestFM",
+  "version": "0.1",
+  "homepage": "https://github.com/firstmakers/test-fmaker",
+  "main": "index.html",
+  "authors": [
+    "Edison Delgado"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "bootstrap-toggle": "~2.2.0",
+    "seiyria-bootstrap-slider": "~4.7.4",
+    "bootstrap-select": "~1.6.4"
+  }
+}
