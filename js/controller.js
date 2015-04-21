@@ -174,11 +174,7 @@ app.prototype.getInfrared = function(val){
 	return val<100;
 }
 
-$( document ).ready(function() {
-    var test = new app();
-    setInterval(test.getPorts, 100);
-    
-});
+
 
 
 

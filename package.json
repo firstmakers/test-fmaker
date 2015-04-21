@@ -1,23 +1,67 @@
 {
-  "name": "Test_FirstMakers",
-  "main": "index.html",
-  "window": {
-    "title": "Test FirstMakers 0.1",
-    "toolbar": true,
-    "frame": true,
-    "position": "center",
-    "width": 800,
-    "height": 600
-  },
-  "dependencies": {
-    "firmata": "^0.4.0",
-    "serialport": "^1.5.0"
-  },
-  "version": "0.0.0",
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Edison Delgado",
-  "license": "MIT"
+    "app_name": "TestFM", 
+    "nodejs": true, 
+    "additional_trust_anchors": "", 
+    "inject-js-end": "", 
+    "node-remote": "", 
+    "keywords": [], 
+    "devDependencies": {}, 
+    "author": "Edison Delgado", 
+    "user-agent": "", 
+    "window": {
+        "fullscreen": false, 
+        "kiosk_emulation": false, 
+        "resizable": false, 
+        "title": "Test FirstMakers 0.1", 
+        "always-on-top": false, 
+        "kiosk": false, 
+        "frame": true, 
+        "show": true, 
+        "visible": true, 
+        "height": 600, 
+        "exe_icon": "", 
+        "width": 800, 
+        "as_desktop": false, 
+        "position": "center", 
+        "show_in_taskbar": true, 
+        "mac_icon": "", 
+        "transparent": false, 
+        "toolbar": false, 
+        "icon": ""
+    }, 
+    "version": "0.0.0", 
+    "inject-js-start": "", 
+    "main": "index.html", 
+    "chromium-args": "", 
+    "webexe_settings": {
+        "linux-x32": false, 
+        "windows-x64": true, 
+        "download_dir": "/Users/eDelgado/Desktop/Web2Executable.app/Contents/Resources/files/downloads", 
+        "nw_compression_level": 5, 
+        "mac-x32": false, 
+        "windows-x32": true, 
+        "mac-x64": true, 
+        "nw_version": "0.12.1", 
+        "force_download": false, 
+        "linux-x64": false
+    }, 
+    "description": "", 
+    "dependencies": {
+        "serialport": "^1.5.0", 
+        "firmata": "^0.4.0"
+    }, 
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }, 
+    "webkit": {
+        "page-cache": false, 
+        "java": false, 
+        "plugin": false
+    }, 
+    "js-flags": "", 
+    "name": "test_firstmakers", 
+    "license": "MIT", 
+    "single-instance": true, 
+    "snapshot": "", 
+    "node-main": ""
 }
