@@ -1,14 +1,15 @@
 # test-fmakers
 
 Para compilar el puerto serial en Windows :
-Requisitos
-Visual Studio
-Python
-Node
-node-pre-gyp
-nw-gyp
-node-webkit 0.12.0
-npm
+
+Requisitos:
+* Visual Studio
+* Python
+* Node
+* node-pre-gyp
+* nw-gyp
+* node-webkit 0.12.0
+* npm
 
 ```
 cd /Path/test-fmakers/
@@ -30,6 +31,7 @@ Renombrar la carpeta
 
 ```
 node_modules\serialport\build\serialport\v1.6.3\Release\node-webkit-v0.12.0-win32-x64  
+```
 ```
 node_modules\serialport\build\serialport\v1.6.3\Release\node-webkit-v43-win32-x64
 ```
