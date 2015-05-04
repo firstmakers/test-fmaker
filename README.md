@@ -22,6 +22,7 @@ npm install
 ```
 cd node_modules/serialport
 ```
+0.12.0 es la versión de node-webkit
 ```
 node-pre-gyp configure --runtime=node-webkit --target=0.12.0 -target-platform=win64
 ```
@@ -40,4 +41,4 @@ node_modules\serialport\build\serialport\v1.6.3\Release\node-webkit-v43-win32-x6
 
 Issues:
 
-En Windows, en algunos casos no se establece la comunicación con el puerto serial,  la solución es ejecucar la aplicación como administrador.
+En Windows, en algunos casos no se establece la comunicación con el puerto serial,  la solución es ejecutar la aplicación como administrador.
