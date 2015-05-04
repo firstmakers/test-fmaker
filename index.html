@@ -25,15 +25,38 @@
     <div class="row">
       <div class="col-xs-6">
             <div class="panel panel-default">
-      <div class="panel-heading">Sensors</div>
+      <div class="panel-heading">
+        <label>Analog</label>
+        <div class="pull-right">
+           <input  id="inputMode" data-onstyle="warning"  data-offstyle="primary" data-off="Sensor Mode" data-on="Analog Mode" data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+        </div>
+      </div>
     <div class="panel-body">
         <ul class="list-group">
-          <li class="list-group-item">[A0] Temperature<span class="badge" id="a0"> 0</span></li>
-          <li class="list-group-item">[A1] Light<span  class="badge" id="a1"> 0</span></li>
-          <li class="list-group-item">[A2] Audio<span class="badge"  id="a2"> 0</span></li>
-          <li class="list-group-item">[A3] Humidity<span class="badge"  id="a3"> 0</span></li>
-          <li class="list-group-item">[A4] Infrared<span class="badge"  id="a4"> 0</span></li>
-          <li class="list-group-item">[A5] Slider<span class="badge" id="a5"> 0</span></li>
+          <li class="list-group-item"> 
+            <label id="a0label" class="body-text">[A0] Temperature</label>
+            <span class="badge" id="a0">0</span>
+          </li>
+          <li class="list-group-item" >
+            <label id="a1label" class="body-text">[A1] Light</label>
+            <span  class="badge" id="a1">0</span>
+          </li>
+          <li class="list-group-item" >
+            <label id="a2label" class="body-text">[A2] Audio</label>
+            <span class="badge"  id="a2">0</span>
+          </li>
+          <li class="list-group-item" >
+            <label id="a3label" class="body-text">[A3] Humidity</label>
+            <span class="badge"  id="a3">0</span>
+          </li>
+          <li class="list-group-item" >
+            <label id="a4label" class="body-text">[A4] Infrared</label>
+            <span class="badge"  id="a4">0</span>
+          </li>
+          <li class="list-group-item">
+            <label id="a5label" class="body-text">[A5] Slider</label>
+            <span class="badge" id="a5">0</span>
+          </li>
         <ul>
 
       </div>
@@ -41,40 +64,51 @@
       </div>
       <div class="col-xs-6">
       <div class="panel panel-default">
-      <div class="panel-heading">Actuators</div>
+      <div class="panel-heading">
+        <label>Digital</label>
+      </div>
         <div class="panel-body">
             <ul class="list-group">
 
-              <li class="list-group-item">[D4] Green Led   
+              <li class="list-group-item">
+                <label class="body-text">[D4] Green Led  </label> 
                 <div class="pull-right"> 
                   <input  id="greenLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
                 </div></li>
 
-              <li class="list-group-item">[D5] Yellow Led
+              <li class="list-group-item">
+                <label class="body-text">[D5] Yellow Led</label>
                 <div class="pull-right"> 
                   <input  id="yellowLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
                 </div>
               </li>
 
-              <li class="list-group-item">[D6] Buzzer
+              <li class="list-group-item">
+                <label class="body-text">[D6] Buzzer</label>
                 <div class="pull-right">
                    <input style="float:right" id="buzzer" data-slider-id='data-buzzer' type="text" data-slider-min="0" data-slider-max="255" data-slider-step="1" data-slider-value="0"/>
                 </div>
                
               </li>
 
-               <li class="list-group-item">[D7] Red Led
+               <li class="list-group-item">
+                <label class="body-text">[D7] Red Led</label>
                  <div class="pull-right"> 
                   <input  id="redLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
                 </div>
               </li>
 
 
-              <li class="list-group-item">[D13] White Led 
+              <li class="list-group-item">
+                <label class="body-text">[D13] White Led</label>
                 <div class="pull-right"> 
                   <input  id="whiteLed" data-onstyle="success"  data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
                 </div>
                 
+              </li>
+               <li class="list-group-item">
+                <label class="body-text">[D2] Switch</label>
+                <span class="badge" id="d2"></span>
               </li>
             <ul>
         </div>
@@ -84,6 +118,48 @@
 
     
     </div>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label>Motors</label>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"> <label class="body-text">Spin</label>          
+                    <div class="pull-right"> 
+                      <input  id="motorSpin" data-onstyle="default"  data-offstyle="primary" data-on="Left" data-off="Right" data-size="small" data-offstyle="danger" data-toggle="toggle" type="checkbox">
+                    </div>
+              </li>
+              <li class="list-group-item"><label class="body-text">Speed</label>
+                    <div class="pull-right">
+                        <input style="float:right" id="motorSpeed" data-slider-id='data-motor' type="text" data-slider-min="0"data-slider-max="255" data-slider-step="1" data-slider-value="0"/>
+                    </div>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <label>Servos</label>
+          </div>
+          <div class="panel-body">
+            <ul class="list-group">
+              <li class="list-group-item"><label class="body-text">Angle</label>
+                    <div class="pull-right">
+                        <input style="float:right" id="servo" data-slider-id='data-servo' type="text" data-slider-min="0"data-slider-max="180" data-slider-step="1" data-slider-value="0"/>
+                    </div>
+              </li>         
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
    
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
