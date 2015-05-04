@@ -1,5 +1,7 @@
 # test-fmakers
 
+Herramienta que se utiliza para probar el funcionamiento de la tarjeta First Makers
+
 Para compilar el puerto serial en Windows :
 
 Requisitos:
@@ -35,3 +37,7 @@ node_modules\serialport\build\serialport\v1.6.3\Release\node-webkit-v0.12.0-win3
 ```
 node_modules\serialport\build\serialport\v1.6.3\Release\node-webkit-v43-win32-x64
 ```
+
+Issues:
+
+En Windows, en algunos casos no se establece la comunicación con el puerto serial,  la solución es ejecucar la aplicación como administrador.
